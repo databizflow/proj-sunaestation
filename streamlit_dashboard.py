@@ -320,7 +320,7 @@ if len(filtered_df) > 0:
             icon=folium.Icon(color=color)
         ).add_to(map_center)
 
-    st_folium(map_center, width=700, height=500)
+    st_folium(map_center, width=600, height=600)
 
 # 데이터 테이블
 st.markdown("<br><br>", unsafe_allow_html=True)
