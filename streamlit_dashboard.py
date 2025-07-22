@@ -9,12 +9,14 @@ import matplotlib.font_manager as fm
 import numpy as np
 import os
 
-# 한글 폰트 설정
+# 폰트 설정
 font_path = os.path.join('fonts', 'NotoSansKR-Regular.ttf')
 if os.path.exists(font_path):
     font_prop = fm.FontProperties(fname=font_path)
-    plt.rcParams['font.family'] = font_prop.get_name()
+    plt.rc('font', family=font_prop.get_name())
     plt.rcParams['axes.unicode_minus'] = False
+else:
+    print(f"폰트 파일이 존재하지 않습니다: {font_path}")
 
 # 페이지 설정
 st.set_page_config(page_title="수내역 작업실 매물 대시보드", layout="wide")
