@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f36b472cf4f27062df9a8bfa10a8fa15 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f36b472cf4f27062df9a8bfa10a8fa15" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f36b472cf4f27062df9a8bfa10a8fa15 = L.map(
+                "map_f36b472cf4f27062df9a8bfa10a8fa15",
+                {
+                    center: [37.3838, 127.124],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cab6155934c2c28a728b6f6947e5c6ea = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cab6155934c2c28a728b6f6947e5c6ea.addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var marker_7c95f53a54185dd6fd601f1cd5b506cc = L.marker(
+                [37.3838, 127.124],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_e41300283ef15185b6fe5dd99cb758d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d70857deca4797af667d7b8fccb2b8e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2aef4e9ec7139fb6727d7382934f789d = $(`<div id="html_2aef4e9ec7139fb6727d7382934f789d" style="width: 100.0%; height: 100.0%;">수내역 (Sunae Station)</div>`)[0];
+                popup_8d70857deca4797af667d7b8fccb2b8e.setContent(html_2aef4e9ec7139fb6727d7382934f789d);
+            
+        
+
+        marker_7c95f53a54185dd6fd601f1cd5b506cc.bindPopup(popup_8d70857deca4797af667d7b8fccb2b8e)
+        ;
+
+        
+    
+    
+                marker_7c95f53a54185dd6fd601f1cd5b506cc.setIcon(icon_e41300283ef15185b6fe5dd99cb758d9);
+            
+    
+            var circle_e68c6eaecc70817d6319ec00a13a582e = L.circle(
+                [37.3838, 127.124],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.3, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+        var popup_356cecab819a18fcc6f980f8e896e9d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8bdf17543d259e4d8fe72b73924f45c = $(`<div id="html_b8bdf17543d259e4d8fe72b73924f45c" style="width: 100.0%; height: 100.0%;">500m 반경</div>`)[0];
+                popup_356cecab819a18fcc6f980f8e896e9d2.setContent(html_b8bdf17543d259e4d8fe72b73924f45c);
+            
+        
+
+        circle_e68c6eaecc70817d6319ec00a13a582e.bindPopup(popup_356cecab819a18fcc6f980f8e896e9d2)
+        ;
+
+        
+    
+    
+            var marker_8792f5cb41e6b001d1846f7447044d9c = L.marker(
+                [37.38049576573499, 127.12417968040585],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_cb193553485b283d84845ab741a6e4e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d33cf49239287c60dba8c599e0396488 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_781777f7bef4d5019b7f072a00d8e8a4 = $(`<div id="html_781777f7bef4d5019b7f072a00d8e8a4" style="width: 100.0%; height: 100.0%;">     <b>수내동 빌딩 1호</b><br>     동: 수내동<br>     면적: 20㎡<br>     보증금: 2,335만원<br>     월세: 80만원<br>     ㎡당 전세가: 1077만원<br>     주차: 불가능<br>     수내역 거리: 0.37km     </div>`)[0];
+                popup_d33cf49239287c60dba8c599e0396488.setContent(html_781777f7bef4d5019b7f072a00d8e8a4);
+            
+        
+
+        marker_8792f5cb41e6b001d1846f7447044d9c.bindPopup(popup_d33cf49239287c60dba8c599e0396488)
+        ;
+
+        
+    
+    
+                marker_8792f5cb41e6b001d1846f7447044d9c.setIcon(icon_cb193553485b283d84845ab741a6e4e1);
+            
+    
+            var marker_9e77871bc1288834ffb222877eee6dd9 = L.marker(
+                [37.38301057034785, 127.12723488128229],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_5fb45b00bebd6ff497ee5abf4977083e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df49957e80a6fa9351168555fdfefb52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1bbac0c343a525f0333059284115f0c9 = $(`<div id="html_1bbac0c343a525f0333059284115f0c9" style="width: 100.0%; height: 100.0%;">     <b>서현동 상가 2호</b><br>     동: 서현동<br>     면적: 24㎡<br>     보증금: 3,815만원<br>     월세: 125만원<br>     ㎡당 전세가: 1409만원<br>     주차: 불가능<br>     수내역 거리: 0.30km     </div>`)[0];
+                popup_df49957e80a6fa9351168555fdfefb52.setContent(html_1bbac0c343a525f0333059284115f0c9);
+            
+        
+
+        marker_9e77871bc1288834ffb222877eee6dd9.bindPopup(popup_df49957e80a6fa9351168555fdfefb52)
+        ;
+
+        
+    
+    
+                marker_9e77871bc1288834ffb222877eee6dd9.setIcon(icon_5fb45b00bebd6ff497ee5abf4977083e);
+            
+    
+            var marker_100a12149c3b84ad72cec5c4ca190c60 = L.marker(
+                [37.38041413245876, 127.1269589918659],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_3fbdc8e8e7100296103fe23553ad6dbe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "remove-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57d685cea0d0004699cc5e2c44fd04e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96f8924f1277b96f1e1b415d14e1e2cf = $(`<div id="html_96f8924f1277b96f1e1b415d14e1e2cf" style="width: 100.0%; height: 100.0%;">     <b>수내동 빌딩 3호</b><br>     동: 수내동<br>     면적: 21㎡<br>     보증금: 2,511만원<br>     월세: 190만원<br>     ㎡당 전세가: 2291만원<br>     주차: 불가능<br>     수내역 거리: 0.46km     </div>`)[0];
+                popup_57d685cea0d0004699cc5e2c44fd04e7.setContent(html_96f8924f1277b96f1e1b415d14e1e2cf);
+            
+        
+
+        marker_100a12149c3b84ad72cec5c4ca190c60.bindPopup(popup_57d685cea0d0004699cc5e2c44fd04e7)
+        ;
+
+        
+    
+    
+                marker_100a12149c3b84ad72cec5c4ca190c60.setIcon(icon_3fbdc8e8e7100296103fe23553ad6dbe);
+            
+    
+            var marker_fac223bb839f7949471c68de1569ea2b = L.marker(
+                [37.38442794799311, 127.12072551898574],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_387a7bac4f796980f906f6eae395d350 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "remove-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72f6319592e8d11f3bc570be7cdd80a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7432749bc8ad6a91569d53fa56f78b9d = $(`<div id="html_7432749bc8ad6a91569d53fa56f78b9d" style="width: 100.0%; height: 100.0%;">     <b>수내동 빌딩 4호</b><br>     동: 수내동<br>     면적: 24㎡<br>     보증금: 4,967만원<br>     월세: 183만원<br>     ㎡당 전세가: 2037만원<br>     주차: 가능<br>     수내역 거리: 0.30km     </div>`)[0];
+                popup_72f6319592e8d11f3bc570be7cdd80a6.setContent(html_7432749bc8ad6a91569d53fa56f78b9d);
+            
+        
+
+        marker_fac223bb839f7949471c68de1569ea2b.bindPopup(popup_72f6319592e8d11f3bc570be7cdd80a6)
+        ;
+
+        
+    
+    
+                marker_fac223bb839f7949471c68de1569ea2b.setIcon(icon_387a7bac4f796980f906f6eae395d350);
+            
+    
+            var marker_9308f2a86bfafcba2ac43650da7beb8e = L.marker(
+                [37.38549648870846, 127.12891391346382],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_e17788f52c2450fdafa877e04d7c5720 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "minus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54a18fa39772782521c149b16309c735 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d333f5f0e909cc9e04d570ea6230b050 = $(`<div id="html_d333f5f0e909cc9e04d570ea6230b050" style="width: 100.0%; height: 100.0%;">     <b>수내동 빌딩 6호</b><br>     동: 수내동<br>     면적: 29㎡<br>     보증금: 4,879만원<br>     월세: 169만원<br>     ㎡당 전세가: 1567만원<br>     주차: 불가능<br>     수내역 거리: 0.47km     </div>`)[0];
+                popup_54a18fa39772782521c149b16309c735.setContent(html_d333f5f0e909cc9e04d570ea6230b050);
+            
+        
+
+        marker_9308f2a86bfafcba2ac43650da7beb8e.bindPopup(popup_54a18fa39772782521c149b16309c735)
+        ;
+
+        
+    
+    
+                marker_9308f2a86bfafcba2ac43650da7beb8e.setIcon(icon_e17788f52c2450fdafa877e04d7c5720);
+            
+    
+            var marker_54cb32cc0bb20457a86ec03a8f587b3e = L.marker(
+                [37.38398092767743, 127.12724749492519],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_f2c66f0a214f3bc9820d3144f455dd2f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "remove-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d7b8d95715cf6ba64cc2f24edace57d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_106390e56c5680d1651a1b9fe536f2ee = $(`<div id="html_106390e56c5680d1651a1b9fe536f2ee" style="width: 100.0%; height: 100.0%;">     <b>서현역 인근 7호</b><br>     동: 서현동<br>     면적: 21㎡<br>     보증금: 1,690만원<br>     월세: 179만원<br>     ㎡당 전세가: 2126만원<br>     주차: 가능<br>     수내역 거리: 0.29km     </div>`)[0];
+                popup_8d7b8d95715cf6ba64cc2f24edace57d.setContent(html_106390e56c5680d1651a1b9fe536f2ee);
+            
+        
+
+        marker_54cb32cc0bb20457a86ec03a8f587b3e.bindPopup(popup_8d7b8d95715cf6ba64cc2f24edace57d)
+        ;
+
+        
+    
+    
+                marker_54cb32cc0bb20457a86ec03a8f587b3e.setIcon(icon_f2c66f0a214f3bc9820d3144f455dd2f);
+            
+    
+            var marker_e6f7a96df3710d8107447bf4fa59eaa6 = L.marker(
+                [37.38332351225176, 127.12068268332325],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_3708cea17e97587782cb565a57094cad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "minus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa7ca71f06c4e9004140d7ee45326c1a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3792697ef6dc26242eeef3d6f7a3b8a9 = $(`<div id="html_3792697ef6dc26242eeef3d6f7a3b8a9" style="width: 100.0%; height: 100.0%;">     <b>정자역 인근 9호</b><br>     동: 정자동<br>     면적: 28㎡<br>     보증금: 4,623만원<br>     월세: 176만원<br>     ㎡당 전세가: 1674만원<br>     주차: 불가능<br>     수내역 거리: 0.30km     </div>`)[0];
+                popup_aa7ca71f06c4e9004140d7ee45326c1a.setContent(html_3792697ef6dc26242eeef3d6f7a3b8a9);
+            
+        
+
+        marker_e6f7a96df3710d8107447bf4fa59eaa6.bindPopup(popup_aa7ca71f06c4e9004140d7ee45326c1a)
+        ;
+
+        
+    
+    
+                marker_e6f7a96df3710d8107447bf4fa59eaa6.setIcon(icon_3708cea17e97587782cb565a57094cad);
+            
+    
+            var marker_1ff641cbb22fb2e8d0887673c060746a = L.marker(
+                [37.380434326427185, 127.1206238757624],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_6f88b9de0636a3df8d7375fc1b2393f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "minus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81162f4170c910f2539c4ad91e37e654 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_010e0d6ed5e0ee8cf137620a1dc4729f = $(`<div id="html_010e0d6ed5e0ee8cf137620a1dc4729f" style="width: 100.0%; height: 100.0%;">     <b>정자역 인근 10호</b><br>     동: 정자동<br>     면적: 30㎡<br>     보증금: 2,745만원<br>     월세: 179만원<br>     ㎡당 전세가: 1524만원<br>     주차: 가능<br>     수내역 거리: 0.48km     </div>`)[0];
+                popup_81162f4170c910f2539c4ad91e37e654.setContent(html_010e0d6ed5e0ee8cf137620a1dc4729f);
+            
+        
+
+        marker_1ff641cbb22fb2e8d0887673c060746a.bindPopup(popup_81162f4170c910f2539c4ad91e37e654)
+        ;
+
+        
+    
+    
+                marker_1ff641cbb22fb2e8d0887673c060746a.setIcon(icon_6f88b9de0636a3df8d7375fc1b2393f3);
+            
+    
+            var marker_f55a2cc4c13570a8436d57ceaa91e8cd = L.marker(
+                [37.38463268817933, 127.11960112954061],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_4b4146a68d32af30491381402f9a9332 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36e4a34c12d389102e8346f5c459a8fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67139ef0389a7ca2407661d07a7acbf9 = $(`<div id="html_67139ef0389a7ca2407661d07a7acbf9" style="width: 100.0%; height: 100.0%;">     <b>수내동 빌딩 13호</b><br>     동: 수내동<br>     면적: 25㎡<br>     보증금: 3,903만원<br>     월세: 122만원<br>     ㎡당 전세가: 1327만원<br>     주차: 가능<br>     수내역 거리: 0.40km     </div>`)[0];
+                popup_36e4a34c12d389102e8346f5c459a8fd.setContent(html_67139ef0389a7ca2407661d07a7acbf9);
+            
+        
+
+        marker_f55a2cc4c13570a8436d57ceaa91e8cd.bindPopup(popup_36e4a34c12d389102e8346f5c459a8fd)
+        ;
+
+        
+    
+    
+                marker_f55a2cc4c13570a8436d57ceaa91e8cd.setIcon(icon_4b4146a68d32af30491381402f9a9332);
+            
+    
+            var marker_c0362a33f2cd2c6a0860e34e66bd2a20 = L.marker(
+                [37.384815234512594, 127.12821677862422],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_c9975091626888721673c221b751f9ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "minus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16bbc62cc255e9a901b5752485d1bba9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c70cf7e47648ddfb0be64764b5841702 = $(`<div id="html_c70cf7e47648ddfb0be64764b5841702" style="width: 100.0%; height: 100.0%;">     <b>수내동 빌딩 20호</b><br>     동: 수내동<br>     면적: 21㎡<br>     보증금: 1,373만원<br>     월세: 127만원<br>     ㎡당 전세가: 1517만원<br>     주차: 불가능<br>     수내역 거리: 0.39km     </div>`)[0];
+                popup_16bbc62cc255e9a901b5752485d1bba9.setContent(html_c70cf7e47648ddfb0be64764b5841702);
+            
+        
+
+        marker_c0362a33f2cd2c6a0860e34e66bd2a20.bindPopup(popup_16bbc62cc255e9a901b5752485d1bba9)
+        ;
+
+        
+    
+    
+                marker_c0362a33f2cd2c6a0860e34e66bd2a20.setIcon(icon_c9975091626888721673c221b751f9ae);
+            
+    
+            var marker_f78afacb57b9b15dd346bca03bcb6d34 = L.marker(
+                [37.385793584299016, 127.12052825029441],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_05102f7d633068820512070ee8b5ce1b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "remove-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_785c60e5e32e7c45cbf6289cd08e7346 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc2ffde34c9622d8fff5e99561f608c2 = $(`<div id="html_cc2ffde34c9622d8fff5e99561f608c2" style="width: 100.0%; height: 100.0%;">     <b>수내동 빌딩 21호</b><br>     동: 수내동<br>     면적: 20㎡<br>     보증금: 2,654만원<br>     월세: 190만원<br>     ㎡당 전세가: 2413만원<br>     주차: 가능<br>     수내역 거리: 0.38km     </div>`)[0];
+                popup_785c60e5e32e7c45cbf6289cd08e7346.setContent(html_cc2ffde34c9622d8fff5e99561f608c2);
+            
+        
+
+        marker_f78afacb57b9b15dd346bca03bcb6d34.bindPopup(popup_785c60e5e32e7c45cbf6289cd08e7346)
+        ;
+
+        
+    
+    
+                marker_f78afacb57b9b15dd346bca03bcb6d34.setIcon(icon_05102f7d633068820512070ee8b5ce1b);
+            
+    
+            var marker_d448e803cbfce739ca78a9e3f3ff46b6 = L.marker(
+                [37.38282982210169, 127.12648481832296],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_285b5145c3281546b41a89a9bc085889 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "remove-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f40d13dfb064acfd61744b8209d5d7ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b39fe027f89e041e01abfbd89694292 = $(`<div id="html_5b39fe027f89e041e01abfbd89694292" style="width: 100.0%; height: 100.0%;">     <b>서현동 상가 22호</b><br>     동: 서현동<br>     면적: 25㎡<br>     보증금: 1,369만원<br>     월세: 174만원<br>     ㎡당 전세가: 1725만원<br>     주차: 불가능<br>     수내역 거리: 0.24km     </div>`)[0];
+                popup_f40d13dfb064acfd61744b8209d5d7ae.setContent(html_5b39fe027f89e041e01abfbd89694292);
+            
+        
+
+        marker_d448e803cbfce739ca78a9e3f3ff46b6.bindPopup(popup_f40d13dfb064acfd61744b8209d5d7ae)
+        ;
+
+        
+    
+    
+                marker_d448e803cbfce739ca78a9e3f3ff46b6.setIcon(icon_285b5145c3281546b41a89a9bc085889);
+            
+    
+            var marker_977fa2f3b65148820e4909f3013f78a4 = L.marker(
+                [37.38316357923436, 127.12658646286178],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_2e0d785562180dd4ac3ebebb6bbb9e04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d75ef0640ed65eebd658a14eda1cb8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2d78ace1541b9c319dfd7b9f31f09d5 = $(`<div id="html_f2d78ace1541b9c319dfd7b9f31f09d5" style="width: 100.0%; height: 100.0%;">     <b>서현동 상가 23호</b><br>     동: 서현동<br>     면적: 30㎡<br>     보증금: 2,432만원<br>     월세: 50만원<br>     ㎡당 전세가: 481만원<br>     주차: 가능<br>     수내역 거리: 0.24km     </div>`)[0];
+                popup_9d75ef0640ed65eebd658a14eda1cb8d.setContent(html_f2d78ace1541b9c319dfd7b9f31f09d5);
+            
+        
+
+        marker_977fa2f3b65148820e4909f3013f78a4.bindPopup(popup_9d75ef0640ed65eebd658a14eda1cb8d)
+        ;
+
+        
+    
+    
+                marker_977fa2f3b65148820e4909f3013f78a4.setIcon(icon_2e0d785562180dd4ac3ebebb6bbb9e04);
+            
+    
+            var marker_5975d9d99271eab7726632ffcb63f6e3 = L.marker(
+                [37.387539759350666, 127.12607950745831],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_649d938a85ff3dad9bc6f4671780f542 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "minus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4736660c97346f5d919546841b5be35f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8bb109805708b1ccae2518c8f86f913f = $(`<div id="html_8bb109805708b1ccae2518c8f86f913f" style="width: 100.0%; height: 100.0%;">     <b>서현동 상가 30호</b><br>     동: 서현동<br>     면적: 25㎡<br>     보증금: 2,432만원<br>     월세: 155만원<br>     ㎡당 전세가: 1585만원<br>     주차: 불가능<br>     수내역 거리: 0.45km     </div>`)[0];
+                popup_4736660c97346f5d919546841b5be35f.setContent(html_8bb109805708b1ccae2518c8f86f913f);
+            
+        
+
+        marker_5975d9d99271eab7726632ffcb63f6e3.bindPopup(popup_4736660c97346f5d919546841b5be35f)
+        ;
+
+        
+    
+    
+                marker_5975d9d99271eab7726632ffcb63f6e3.setIcon(icon_649d938a85ff3dad9bc6f4671780f542);
+            
+    
+            var marker_88d223a9868e5a17717641a7a18a21f7 = L.marker(
+                [37.38523951430541, 127.12799138217817],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_d19b31fc1770b28a15898da7c71e1115 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25850bcd7b0baa7e3b4946f59217bc0c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26b792ea8d8239e8fe8057d7cc1f2228 = $(`<div id="html_26b792ea8d8239e8fe8057d7cc1f2228" style="width: 100.0%; height: 100.0%;">     <b>서현역 인근 32호</b><br>     동: 서현동<br>     면적: 20㎡<br>     보증금: 4,660만원<br>     월세: 62만원<br>     ㎡당 전세가: 977만원<br>     주차: 가능<br>     수내역 거리: 0.39km     </div>`)[0];
+                popup_25850bcd7b0baa7e3b4946f59217bc0c.setContent(html_26b792ea8d8239e8fe8057d7cc1f2228);
+            
+        
+
+        marker_88d223a9868e5a17717641a7a18a21f7.bindPopup(popup_25850bcd7b0baa7e3b4946f59217bc0c)
+        ;
+
+        
+    
+    
+                marker_88d223a9868e5a17717641a7a18a21f7.setIcon(icon_d19b31fc1770b28a15898da7c71e1115);
+            
+    
+            var marker_b689186668f2f786b68700b35aa245ba = L.marker(
+                [37.38221291091967, 127.1281901098934],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_25398f50be06646af6840e5fe70438dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "minus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d635d5c5a182687d1709850b5ccce106 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c38fd63244b12e2eaa0b27c89040f6a2 = $(`<div id="html_c38fd63244b12e2eaa0b27c89040f6a2" style="width: 100.0%; height: 100.0%;">     <b>서현동 상가 33호</b><br>     동: 서현동<br>     면적: 24㎡<br>     보증금: 1,240만원<br>     월세: 160만원<br>     ㎡당 전세가: 1652만원<br>     주차: 불가능<br>     수내역 거리: 0.41km     </div>`)[0];
+                popup_d635d5c5a182687d1709850b5ccce106.setContent(html_c38fd63244b12e2eaa0b27c89040f6a2);
+            
+        
+
+        marker_b689186668f2f786b68700b35aa245ba.bindPopup(popup_d635d5c5a182687d1709850b5ccce106)
+        ;
+
+        
+    
+    
+                marker_b689186668f2f786b68700b35aa245ba.setIcon(icon_25398f50be06646af6840e5fe70438dc);
+            
+    
+            var marker_29cc3e7d73a5aee85eef94276f5963b4 = L.marker(
+                [37.38263300767219, 127.12163393237829],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_ba8117c2d193f145c556b18216cd4e0a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e31c37605b99ffbda317940f0897f4d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1bc4eac0609389e63668b84ba35c5e0 = $(`<div id="html_d1bc4eac0609389e63668b84ba35c5e0" style="width: 100.0%; height: 100.0%;">     <b>수내동 빌딩 35호</b><br>     동: 수내동<br>     면적: 22㎡<br>     보증금: 1,292만원<br>     월세: 105만원<br>     ㎡당 전세가: 1204만원<br>     주차: 가능<br>     수내역 거리: 0.25km     </div>`)[0];
+                popup_e31c37605b99ffbda317940f0897f4d7.setContent(html_d1bc4eac0609389e63668b84ba35c5e0);
+            
+        
+
+        marker_29cc3e7d73a5aee85eef94276f5963b4.bindPopup(popup_e31c37605b99ffbda317940f0897f4d7)
+        ;
+
+        
+    
+    
+                marker_29cc3e7d73a5aee85eef94276f5963b4.setIcon(icon_ba8117c2d193f145c556b18216cd4e0a);
+            
+    
+            var marker_793cce7d46de56aa89630a46e752e068 = L.marker(
+                [37.38547712609298, 127.1270136571206],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_3d1d60ed54ad1d0bbe49225231937b4a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0db21bdf3901b9a72b3abe0192fb62b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_431e347381e20310ed2753ab5793f194 = $(`<div id="html_431e347381e20310ed2753ab5793f194" style="width: 100.0%; height: 100.0%;">     <b>서현동 상가 39호</b><br>     동: 서현동<br>     면적: 29㎡<br>     보증금: 4,033만원<br>     월세: 93만원<br>     ㎡당 전세가: 909만원<br>     주차: 가능<br>     수내역 거리: 0.33km     </div>`)[0];
+                popup_0db21bdf3901b9a72b3abe0192fb62b1.setContent(html_431e347381e20310ed2753ab5793f194);
+            
+        
+
+        marker_793cce7d46de56aa89630a46e752e068.bindPopup(popup_0db21bdf3901b9a72b3abe0192fb62b1)
+        ;
+
+        
+    
+    
+                marker_793cce7d46de56aa89630a46e752e068.setIcon(icon_3d1d60ed54ad1d0bbe49225231937b4a);
+            
+    
+            var marker_e33fef7f679dbce5d82d358cd561196d = L.marker(
+                [37.38674611190406, 127.12697113397861],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_41640742d202079fc315a9f7b1f55fd7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "remove-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6af43d9d60e3b3b8901d9c11fec4afe4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9fe2f6cb7c2ddd4368c1efc780e9e60 = $(`<div id="html_a9fe2f6cb7c2ddd4368c1efc780e9e60" style="width: 100.0%; height: 100.0%;">     <b>서현역 인근 40호</b><br>     동: 서현동<br>     면적: 21㎡<br>     보증금: 1,665만원<br>     월세: 145만원<br>     ㎡당 전세가: 1736만원<br>     주차: 불가능<br>     수내역 거리: 0.42km     </div>`)[0];
+                popup_6af43d9d60e3b3b8901d9c11fec4afe4.setContent(html_a9fe2f6cb7c2ddd4368c1efc780e9e60);
+            
+        
+
+        marker_e33fef7f679dbce5d82d358cd561196d.bindPopup(popup_6af43d9d60e3b3b8901d9c11fec4afe4)
+        ;
+
+        
+    
+    
+                marker_e33fef7f679dbce5d82d358cd561196d.setIcon(icon_41640742d202079fc315a9f7b1f55fd7);
+            
+    
+            var marker_ac5303b02c0eddca379bd1ee8a6ab77e = L.marker(
+                [37.38798825952479, 127.12308626760115],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_fb8dfb7e9d1a56e582139a08ad82ad70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "remove-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a514330aeb2e20f4f2910c8d8f51f754 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c0056e0e5e6077d1e71e5cd0ab621b0 = $(`<div id="html_3c0056e0e5e6077d1e71e5cd0ab621b0" style="width: 100.0%; height: 100.0%;">     <b>수내동 빌딩 43호</b><br>     동: 수내동<br>     면적: 25㎡<br>     보증금: 3,624만원<br>     월세: 164만원<br>     ㎡당 전세가: 1719만원<br>     주차: 불가능<br>     수내역 거리: 0.47km     </div>`)[0];
+                popup_a514330aeb2e20f4f2910c8d8f51f754.setContent(html_3c0056e0e5e6077d1e71e5cd0ab621b0);
+            
+        
+
+        marker_ac5303b02c0eddca379bd1ee8a6ab77e.bindPopup(popup_a514330aeb2e20f4f2910c8d8f51f754)
+        ;
+
+        
+    
+    
+                marker_ac5303b02c0eddca379bd1ee8a6ab77e.setIcon(icon_fb8dfb7e9d1a56e582139a08ad82ad70);
+            
+    
+            var marker_7c4788b3ed1ba34abf6be30c6ac3a2af = L.marker(
+                [37.381264981342994, 127.1204823427246],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_a68f628de554bc8de24eccc768daa584 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_245596f59e83cccee05ce4193bdfdd0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43cf00692b0884b53b60b203cced70dc = $(`<div id="html_43cf00692b0884b53b60b203cced70dc" style="width: 100.0%; height: 100.0%;">     <b>수내동 빌딩 44호</b><br>     동: 수내동<br>     면적: 25㎡<br>     보증금: 3,586만원<br>     월세: 120만원<br>     ㎡당 전세가: 1295만원<br>     주차: 가능<br>     수내역 거리: 0.42km     </div>`)[0];
+                popup_245596f59e83cccee05ce4193bdfdd0e.setContent(html_43cf00692b0884b53b60b203cced70dc);
+            
+        
+
+        marker_7c4788b3ed1ba34abf6be30c6ac3a2af.bindPopup(popup_245596f59e83cccee05ce4193bdfdd0e)
+        ;
+
+        
+    
+    
+                marker_7c4788b3ed1ba34abf6be30c6ac3a2af.setIcon(icon_a68f628de554bc8de24eccc768daa584);
+            
+    
+            var marker_f0a0c85ad1a7b86dc2961d69f467718b = L.marker(
+                [37.386355357409336, 127.12699478126409],
+                {
+}
+            ).addTo(map_f36b472cf4f27062df9a8bfa10a8fa15);
+        
+    
+            var icon_6df4a02d13c451cdf2657414db27b6dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "remove-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95e0fe8f51c9adeaeda67a8566efe2ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4491a65eec145d35e384f257a4c9c0ab = $(`<div id="html_4491a65eec145d35e384f257a4c9c0ab" style="width: 100.0%; height: 100.0%;">     <b>서현역 인근 46호</b><br>     동: 서현동<br>     면적: 22㎡<br>     보증금: 4,738만원<br>     월세: 156만원<br>     ㎡당 전세가: 1917만원<br>     주차: 불가능<br>     수내역 거리: 0.39km     </div>`)[0];
+                popup_95e0fe8f51c9adeaeda67a8566efe2ed.setContent(html_4491a65eec145d35e384f257a4c9c0ab);
+            
+        
+
+        marker_f0a0c85ad1a7b86dc2961d69f467718b.bindPopup(popup_95e0fe8f51c9adeaeda67a8566efe2ed)
+        ;
+
+        
+    
+    
+                marker_f0a0c85ad1a7b86dc2961d69f467718b.setIcon(icon_6df4a02d13c451cdf2657414db27b6dc);
+            
+</script>
+</html>
