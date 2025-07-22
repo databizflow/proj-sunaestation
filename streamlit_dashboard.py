@@ -10,6 +10,9 @@ import numpy as np
 import os
 
 # 폰트 설정
+import platform
+import matplotlib.font_manager as fm
+
 font_path = os.path.join('fonts', 'NotoSansKR-Regular.ttf')
 if os.path.exists(font_path):
     font_prop = fm.FontProperties(fname=font_path)
