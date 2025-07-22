@@ -16,7 +16,7 @@ if os.path.exists(font_path):
     plt.rc('font', family=font_prop.get_name())
     plt.rcParams['axes.unicode_minus'] = False
 else:
-    print(f"폰트 파일이 존재하지 않습니다: {font_path}")
+    print("폰트 파일이 없습니다.")
 
 # 페이지 설정
 st.set_page_config(page_title="수내역 작업실 매물 대시보드", layout="wide")
