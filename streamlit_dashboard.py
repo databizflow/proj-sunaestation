@@ -9,17 +9,27 @@ import matplotlib.font_manager as fm
 import numpy as np
 import os
 
-# 폰트 설정
-import platform
-import matplotlib.font_manager as fm
+# 한글 폰트 직접 설정
+font_path = 'fonts/NotoSansKR-Regular.ttf'
 
-font_path = os.path.join('fonts', 'NotoSansKR-Regular.ttf')
+# 폰트 파일이 있는지 확인하고 직접 적용
 if os.path.exists(font_path):
+    # matplotlib에 폰트 직접 등록
+    fm.fontManager.addfont(font_path)
+    
+    # 폰트 속성 가져오기
     font_prop = fm.FontProperties(fname=font_path)
-    plt.rc('font', family=font_prop.get_name())
-    plt.rcParams['axes.unicode_minus'] = False
+    
+    # matplotlib 전역 설정
+    plt.rcParams.update({
+        'font.family': 'sans-serif',
+        'font.sans-serif': [font_prop.get_name()],
+        'axes.unicode_minus': False
+    })
+    
+    print(f"✅ 한글 폰트 적용 완료: {font_prop.get_name()}")
 else:
-    print("폰트 파일이 없습니다.")
+    print("❌ 폰트 파일을 찾을 수 없습니다:", font_path)
 
 # 페이지 설정
 st.set_page_config(page_title="수내역 작업실 매물 대시보드", layout="wide")
